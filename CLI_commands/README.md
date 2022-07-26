@@ -76,7 +76,7 @@ aws ec2 run-instances \
     --instance-type t2.micro \
     --key-name firstkey \
     --security-groups roman_numbers_sec_grp \
-    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roman_numbers}]'
+    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roman_numbers}]' \
     --user-data file:///home/ec2-user/userdata.sh
 ```
 
